@@ -14,6 +14,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JTextField;
 import java.awt.FlowLayout;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JComboBox;
@@ -141,7 +142,7 @@ public class MyCalculator extends JFrame {
 				addLogEntry(textField.getText(), textField_1.getText(),
 						((CalcType) comboBox.getSelectedItem()).getValue(), String.format("%.2f", res));
 			} catch (Exception ex) {
-
+				JOptionPane.showMessageDialog(null, ex.getMessage(), "Fehler bei Kalkulation", JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	};
