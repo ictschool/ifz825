@@ -143,7 +143,7 @@ public class MyCalculator extends JFrame {
 						((CalcType) comboBox.getSelectedItem()).getValue(), String.format("%.2f", res));
 			} catch (Exception ex) {
 				JOptionPane.showMessageDialog(null, ex.getMessage(), "Fehler bei Kalkulation", JOptionPane.ERROR_MESSAGE);
-			}
+			} 
 		}
 	};
 
